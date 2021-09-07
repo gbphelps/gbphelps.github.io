@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    const features = Array.from(document.getElementsByClassName('feature'));
+    const features = Array.from(document.getElementsByClassName('feature')).filter(f => 
+        !Array.from(f.classList).includes('no-video')
+    )
     features.forEach(f => {
         const play = f.getElementsByClassName('play')[0];
         const video = f.getElementsByTagName('video')[0];
