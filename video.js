@@ -17,8 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const play = f.getElementsByClassName('play')[0];
         const video = f.getElementsByTagName('video')[0];
         const pause = f.getElementsByClassName('pause')[0];
+        video.loop = true;
 
-        play.addEventListener('click',()=>{
+        video.addEventListener('mouseenter',()=>{
             features.forEach(f => {
                 const play = f.getElementsByClassName('play')[0];
                 const video = f.getElementsByTagName('video')[0];

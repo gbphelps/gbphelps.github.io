@@ -132,13 +132,12 @@ body{
 }
 
 .feature-link {
-	background: white;
+	background: #fafafc;
 	padding: 12px;
 	margin-bottom: 8px;
 	border-radius: 200px;
 	display: flex;
 	align-items: center;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,.12);
 	color: #777;
 	transition: .2s;
 	cursor: pointer;
@@ -241,4 +240,10 @@ a {
 .video-container {
 	border-radius: 3px;
 	overflow: hidden;
+}
+
+.text-box {
+	color: #777;
+	line-height: 1.25;
+	margin-bottom: 16px;
 }
